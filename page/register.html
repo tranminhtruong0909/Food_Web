@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký</title>
+    <link rel="stylesheet" href="../assets/css/register.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="top">
+        </div>
+        <div class="down">
+            <a href="#">MinhTruongFood</a>
+        </div>
+    </header>
+    <div class="content">
+        <div class="content_title">
+            <p>Đăng ký</p>
+        </div>
+        <div class="content_username">
+            <input  type="text"name="username" class="name_input" placeholder="Tên đăng nhập" required>
+            <i class="fa-solid fa-user icon_user"></i>
+        </div>
+        <div class="content_email" id="content_email">
+            <input  type="text"name="username" class="email_input" placeholder="Nhập email" required>
+            <i class="fa-regular fa-envelope"></i>
+        </div>
+        <div class="content_password">
+            <input  type="text"name="username" class="pass_input" placeholder="Nhập mật khẩu" required>
+            <i class="fa-solid fa-lock"></i>
+        </div>
+        <div class="content_againpassword">
+            <input  type="text"name="username" class="pass_input1" placeholder="Nhập lại mật khẩu" required>
+            <i class="fa-solid fa-lock"></i>
+        </div>
+        <div class="content_register" onclick="isValidate()">
+            <a href="#">Đăng ký</a>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-country">
+            <p>Công Ty Cổ Phần MinhTruongFood, Toà nhà Đại học Công nghệ Đông Á, P. Trịnh Văn Bô, Xuân Phương, Nam Từ Liêm, Hà Nội 129630, Việt Nam</p>
+            <p>Email: support@minhtruongfood.vn</p>
+            <p>Hotline: 000098547</p>
+        </div>
+    </footer>
+    <script src="../assets/js/register.js"></script>
+</body>
+</html>

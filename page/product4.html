@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="head">
+            <div class="head_top">
+              <div class="head_top-discover">
+                <a href="">Khám Phá</a>
+              </div>
+            </div>
+            <div class="head_down">
+              <div class="head_down-avatar">
+                <a href="./index.html">
+                    <img src="../assets/img/icon/Ảnh chụp màn hình 2023-09-20 160424.png" alt="logo">
+                </a>
+              </div>
+              <div class="head_down-address">
+                <div class="head_address-address1" onclick="showMenu1()">
+                  <a href="#">Hà Nội</a>
+                  <a href="#">
+                    <i class="fa-solid fa-caret-down"></i>
+                  </a>
+                </div>
+                </a>
+              </div>
+              <div class="head_down-selectcategory1">
+                <div class="head_selectcategory1-selectcategory12" onclick="showMenu2()">
+                  <a href="#">Ăn uống</a>
+                  <a href="#"><i class="fa-solid fa-caret-down"></i></a>
+                </div>
+              </div>
+              <div class="head_down-searchbar">
+                <div class="head_down-search" >
+                  <input  type="text"name="username"  placeholder="Địa điểm, món ăn, ngoại hình ...." required>
+                </div>
+                <div class="head_down-filter"> 
+                  <div class="head_filter-icon">
+                    <i class="fa-solid fa-list-check"></i>
+                  </div>
+                  <div class="head_filter-smallfilter">
+                    <a href="">Bộ lọc</a>
+                  </div>
+                </div>
+                <div class="head_down-icon">
+                  <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                </div>
+              </div>
+              <div class="head_down-selectcategory2">
+                <div class="head_selectcategory2-selectcategory21">
+                  <a href="./feedback.html"><i class="fa-solid fa-bars"></i></a>
+                  
+                </div>
+                </div>
+              <div class="head_down-app">
+                <div class="head_app-app1">
+                  <div class="head_app1-icon">
+                    <a href="./app.html"><i class="fa-solid fa-mobile-screen-button"></i></a>
+                  </div>
+                </div>
+                <div class="head_app-app2">
+                  <a href="./app.html">App</a>
+                </div>
+              </div>
+              <div class="head_down-nav">
+                <div class="head_nav-nab1">
+                  <a href="./login.html" class="head_nab1-login">Đăng nhập</a>
+                  <a href="./register.html" class="head_nab1-login">Đăng kí</a>
+                </div>
+                  <div class="head_nav-nab2" onclick="showMenu3()">
+                    <div class="head_nab2-icon">
+                      <a href="#">
+                        <i class="fa-regular fa-bell"></i>
+                      </a>
+                    </div>  
+                  </div>
+                  <div class="head_nav-nab3" onclick="showMenu4()">
+                    <div class="head_nab3-icon">
+                      <a href="#">
+                        <i class="fa-solid fa-plus"></i>
+                      </div>
+                      </a>
+                  </div>
+                  <div class="head_nav-nab4">
+                    <div class="head_nab4-language" onclick="showMenu5()">
+                      <a href="#">
+                        <img src="../assets/img/language/images.png" alt="Ngôn ngữ tiếng việt">
+                      </a>
+                    </div>
+                  </div>
+              </div>
+              <div class="head_address-child" id="head_address-child">
+                <div class="head_child-title">
+                  <div class="head-title-icon">
+                    <i class="fa-solid fa-earth-asia"></i>
+                  </div>
+                  <div class="head-title-content">
+                    <p>Tỉnh thành</p>
+                  </div>
+                </div>
+                <div class="head_child-childsearch">
+                  <div class="head_childsearch-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </div>
+                  <div class="head_childsearch-cotent">
+                    <input type="text" class="head_search-1 " placeholder="Tìm tỉnh thành">
+                  </div>
+                </div>
+                <div class="head_child-conscious">
+                  <div class="head_conscious-icon">
+                    <i class="fa-solid fa-caret-up"></i>
+                  </div>
+                  <ul class="head_list-address">
+                    <li class="head_list-address">
+                      <div class="head_address-name">
+                        <p class="head_name-p">TP-HCM</p>
+                      </div>
+                      <div class="head_address-number">
+                        <p class="head_number-p">207,419</p>
+                      </div>
+                    </li>
+                    <li class="head_list-address">
+                      <div class="head_address-name">
+                        <p class="head_name-p">Hà Nội</p>
+                      </div>
+                      <div class="head_address-number">
+                        <p class="head_number-p">119,308</p>
+                      </div>
+                    </li>
+                    <li class="head_list-address">
+                      <div class="head_address-name">
+                        <p class="head_name-p">Đà Nẵng</p>
+                      </div>
+                      <div class="head_address-number">
+                        <p class="head_number-p">31,674</p>
+                      </div>
+                    </li>
+                    <li class="head_list-address">
+                      <div class="head_address-name">
+                        <p class="head_name-p">Cần Thơ</p>
+                      </div>
+                      <div class="head_address-number">
+                        <p class="head_number-p">12,555</p>
+                      </div>
+                    </li>
+                    <li class="head_list-address">
+                      <div class="head_address-name">
+                        <p class="head_name-p">Khánh Hoà</p>
+                      </div>
+                      <div class="head_address-number">
+                        <p class="head_number-p">10,327</p>
+                      </div>
+                    </li>
+                    <li class="head_list-address">
+                      <div class="head_address-name">
+                        <p class="head_name-p">Vũng Tàu</p>
+                      </div>
+                      <div class="head_address-number">
+                        <p class="head_number-p">7,831</p>
+                      </div>
+                    </li>
+                    <li class="head_list-address">
+                      <div class="head_address-name">
+                        <p class="head_name-p">Hải Phòng</p>
+                      </div>
+                      <div class="head_address-number">
+                        <p class="head_number-p">12,976</p>
+                      </div>
+                    </li>
+                    <li class="head_list-address">
+                      <div class="head_address-name">
+                        <p class="head_name-p">Bình Thuận</p>
+                      </div>
+                      <div class="head_address-number">
+                        <p class="head_number-p">3,521</p>
+                      </div>
+                    </li>
+                    <li class="head_list-address">
+                      <div class="head_address-name">
+                        <p class="head_name-p">Lâm Đồng</p>
+                      </div>
+                      <div class="head_address-number">
+                        <p class="head_number-p">7,272</p>
+                      </div>
+                    </li>
+                    <li class="head_list-address">
+                      <div class="head_address-name">
+                        <p class="head_name-p">Đồng Nai</p>
+                      </div>
+                      <div class="head_address-number">
+                        <p class="head_number-p">14,708</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="head_child-icon">
+                  <div class="head_icon-avatar1">
+                    <i class="fa-solid fa-location-pin"></i>
+                  </div>
+                  <div class="head_icon-avatar2">
+                    <p>334K</p>
+                  </div>
+                  <div class="head_icon-avatar1">
+                    <i class="fa-solid fa-comment"></i>
+                  </div>
+                  <div class="head_icon-avatar2">
+                    <p>1M</p>
+                  </div>
+                  <div class="head_icon-avatar1">
+                    <i class="fa-solid fa-camera"></i>
+                  </div>
+                  <div class="head_icon-avatar2">
+                    <p>10M</p>
+                  </div>
+                  <div class="head_icon-avatar1">
+                    <i class="fa-solid fa-flag"></i>
+                  </div>
+                  <div class="head_icon-avatar2">
+                    <p>25M</p>
+                  </div>
+                </div>
+              </div>
+              <div class="head_selectcategory1-small" id="head_selectcategory1-small">
+                <div class="head_selectcategory1-icon">
+                  <i class="fa-solid fa-sort-up"></i>
+                </div>
+                <div class="head_small-title">
+                  <div class="head-small-icon">
+                    <i class="fa-solid fa-bars"></i>
+                  </div>
+                  <div class="head-title-content">
+                    <p>Chọn danh mục</p>
+                  </div>
+                </div>
+                <div class="head_small-conscious">
+                  <ul class="head_list-small">
+                    <li class="head_list-small">
+                      <div class="head_small-name">
+                        <p class="head_name-p">Ăn uống</p>
+                      </div>
+                      <div class="head_small-number">
+                        <i class="fa-solid fa-angle-right"></i>
+                      </div>
+                    </li>
+                    <li class="head_list-small">
+                      <div class="head_small-name">
+                        <p class="head_name-p">Hà Nội</p>
+                      </div>
+                      <div class="head_small-number">
+                        <i class="fa-solid fa-angle-right"></i>  
+                      </div>
+                    </li>
+                    <li class="head_list-small">
+                      <div class="head_small-name">
+                        <p class="head_name-p">Đà Nẵng</p>
+                      </div>
+                      <div class="head_small-number">
+                        <i class="fa-solid fa-angle-right"></i>
+                      </div>
+                    </li>
+                    <li class="head_list-small">
+                      <div class="head_small-name">
+                        <p class="head_name-p">Đà Nẵng</p>
+                      </div>
+                      <div class="head_small-number">
+                        <i class="fa-solid fa-angle-right"></i>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="head_nab2" id="head_nab2">
+                <div class="nab2_icon">
+                  <i class="fa-solid fa-caret-up"></i>
+                </div>
+                <div class="nab2_content">
+                  <div class="nab2_top">
+                    <div class="nab2_top-title1">
+                      <p>Dịch vụ</p>
+                    </div>
+                    <div class="nab2_top-title2">
+                      <p>Của tôi</p>
+                    </div>
+                  </div>
+                  <div class="nab2_down">
+                    <div class="nab2_down-title1">
+                      <i class="fa-solid fa-lock"></i>
+                    </div>
+                    <div class="nab2_down-title2">
+                      <p>Đăng nhập để xem</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="head_nab3" id="head_nab3">
+                <div class="head_nab3-avatar">
+                  <i class="fa-solid fa-caret-up"></i>
+                </div>
+                <div class="head_title-down">
+                  <div class="head_nab3-title">
+                    <div class="head_title-top">
+                      <p>Bạn có thể</p>
+                    </div>
+                  </div>
+                  <ul class="head_down-nab3">
+                    <li class="head_down-nab3">
+                      <div class="head_nab3-name">
+                        <i class="fa-solid fa-location-dot"></i>
+                      </div>
+                      <div class="head_nab3-number">
+                        <p class="head_number-nab3">Tạo địa điểm</p>
+                      </div>
+                    </li>
+                    <li class="head_down-nab3">
+                      <div class="head_nab3-name">
+                        <i class="fa-solid fa-comment"></i>
+                      </div>
+                      <div class="head_nab3-number">
+                        <p class="head_number-nab3">Viết bình luận</p>
+                      </div>
+                    </li>
+                    <li class="head_down-nab3">
+                      <div class="head_nab3-name">
+                        <i class="fa-solid fa-bars"></i>
+                      </div>
+                      <div class="head_nab3-number">
+                        <p class="head_number-nab3">Tạo bộ sưu tập</p>
+                      </div>
+                    </li>
+                    <li class="head_down-nab3">
+                      <div class="head_nab3-name">
+                        <i class="fa-solid fa-thumbs-down"></i>
+                      </div>
+                      <div class="head_nab3-number">
+                        <p class="head_number-nab3">Góp ý</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="head_nab4">
+                <div class="head_nab4-no" id="head_nab4-no">
+                  <div class="head_nab4-content" >
+                    <div class="nab4_icon">
+                      <img src="../assets/img/language/Flag_of_the_United_States.svg.png" alt="Ngôn ngữ tiếng anh">
+                    </div>
+                    <div class="nab4_language">
+                      <p>
+                        EN
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </header>
+    <div class="content">
+        <div class="content_left">
+
+        </div>
+        <div class="content_right">
+            <div class="content_right-title">
+                <h1>
+                    Quả Hạnh Nhân
+                </h1>
+            </div>
+            <div class="content_right-address">
+                <p>9 Trần Hữu Dực Kéo Dài (Đối Diện ĐH Công Nghệ Đông Á), P. Xuân Phương, Nam Từ Liêm, Hà Nội</p>
+            </div>
+            <div class="content_right-star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <p>đánh giá trên MinhTruongFood</p>
+                </div>
+            <div class="content_right-clock">
+                <i class="fa-solid fa-door-open"></i>
+                <a href="#">Mở của</a>
+                <i class="fa-regular fa-clock"></i>
+                <p>07:00 - 23:00</p> 
+            </div>
+            <div class="content_right-monye">
+                <i class="fa-solid fa-dollar-sign"></i>
+                <p>199,000</p>
+            </div>
+            <div class="content_right-transport">
+                <p>Vận chuyển:</p>
+                <p>Miễn phí vận chuyển</p>
+            </div>
+            <div class="content_right-size">
+                <p>Kích cỡ:</p>
+                <a href="#" class="no-hover">
+                    <p>Nhỏ</p>
+                </a>
+                <a href="#" class="no-hover">
+                    <p>Vừa</p>
+                </a>
+                <a href="#" class="no-hover">
+                    <p>Lớn</p>
+                </a>
+            </div>
+            <div class="content_right-cart">
+                <a href="#" class="content_cart-1">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <p>Thêm vào giỏ hàng</p>
+                </a>
+                <a href="#" class="content_cart-2">
+                    <p>Mua ngay</p>
+                </a>
+            </div>
+        </div>
+        <!-- z-index -->
+        <div class="content_left">
+            <div class="content_left-img">
+                <img src="../assets/img/food/Quả Hạnh Nhân.webp" alt="">
+            </div>
+            <div class="content_left-title">
+                <div class="content_left-share">
+                    <p>Chia sẻ:</p>
+                    <a href="#" class="facebook">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="#" class="twitter">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="#" class="messenger">
+                        <i class="fa-brands fa-facebook-messenger"></i>
+                    </a>
+                    <a href="#" class="pinterest">
+                        <i class="fa-brands fa-pinterest"></i>
+                    </a>
+                </div>
+                <div class="content_left-like">
+                    <i class="fa-regular fa-heart"></i>
+                    <p> Đã thích (14k)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-country">
+          <p>Công Ty Cổ Phần MinhTruongFood, Toà nhà Đại học Công nghệ Đông Á, P. Trịnh Văn Bô, Xuân Phương, Nam Từ Liêm, Hà Nội 129630, Việt Nam</p>
+          <p>Email: support@minhtruongfood.vn</p>
+          <p>Hotline: 000098547</p>
+        </div>
+    </footer>
+    <!-- relative -->
+    <script src="../assets/js/index.js"></script>
+</body>
+</html>
